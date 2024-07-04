@@ -4,6 +4,37 @@
     outline: none;
 }
 
+body {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 0.88rem;
+}
+
+h1,
+h2 {
+    font-family: "Karantina", system-ui;
+    font-weight: 700;
+    font-style: normal;
+}
+
+h1 {
+    font-size: 6rem;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+h4 {
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+
 .o-scroll {
     overflow: scroll;
 }

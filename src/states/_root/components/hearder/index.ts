@@ -9,10 +9,8 @@ export default class Header extends LayoutContainerBreakout<"header"> {
         this.children(
             Z("div").class(style.logo).children(
                 Z("img").set("src", "/_img/logo.png"),
-                Z("p").children(
-                    Z("b").text("Zeyo"),
-                    Z("br"),
-                    Z("i").text("Framework")
+                Z("span").children(
+                    Z("h4").text("Automalu"),
                 )
             ),
         )
