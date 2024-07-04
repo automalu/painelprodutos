@@ -4,10 +4,11 @@
 }
 
 .logo {
+    margin-top: 1rem;
     display: flex;
     gap: 1rem;
     align-items: center;
-    justify-content: center;
+    /* justify-content: center; */
 }
 
 .logo p {
