@@ -22,6 +22,7 @@ h2 {
 
 h1 {
     font-size: 6rem;
+    line-height: 5rem;
 }
 
 h2 {
@@ -35,6 +36,28 @@ h3 {
 h4 {
     font-size: 1.25rem;
     font-weight: 400;
+}
+
+button {
+    --background-color: var(--clr-primary);
+    --color: var(--clr-background);
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    font-size: 1.25rem;
+    background-color: var(--background-color);
+    color: var(--color);
+    cursor: pointer;
+}
+
+button.calltoaction {
+    --background-color: var(--clr-accent);
+    --color: var(--clr-text);
+    font-weight: 700;
+}
+
+a {
+    color: var(--clr-primary-200);
 }
 
 .o-scroll {

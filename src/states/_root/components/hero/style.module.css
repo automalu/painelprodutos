@@ -1,3 +1,66 @@
-.hero * {
-    grid-column: 1 / span 12;
+.hero > div {
+    grid-row:1 ;
+    position: relative;
+}
+
+.hero div.text {
+    grid-column: 1 / span 9;
+    display: grid;
+    gap: 3rem;
+}
+
+.hero div.text h4 {
+    width: 75%;
+}
+
+.hero div.text .socialproof {
+    margin-top: .5rem;
+    align-items: center;
+    padding-left: 1rem;
+}
+
+.hero div.text .profiles > img {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    border: .25rem solid var(--clr-background);
+    object-fit: cover;
+    margin-left: -1rem;
+}
+
+.hero div.image {
+    grid-column: 8 / span 5;
+    height: 100%;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+    width: 120%;
+    margin-bottom: 2rem;
+}
+
+.hero div.image > div.esfera{
+    /* background: linear-gradient(to bottom, #950094 0%, #5E1CC8 100%); */
+    position: relative;
+    width: 100%;
+    height: 100%;
+    grid-row: 1;
+    grid-column: 1;
+    z-index: 1;
+    position: relative;
+}
+.hero div.image > div.esfera > svg {
+    width: 140%;
+    position: absolute;
+    left: -20%;
+}
+
+.hero div.image > img {
+    width: 110%;
+    grid-row: 1;
+    grid-column: 1;
+    z-index: 2;
+    margin: 0rem 0;
+    border-radius: 0 0 46% 46%;
 }
