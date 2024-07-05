@@ -31,6 +31,7 @@ h2 {
 
 h3 {
     font-size: 2rem;
+    line-height: 2.25rem;
 }
 
 h4 {
@@ -44,7 +45,7 @@ button {
     border: none;
     padding: 1rem 2rem;
     border-radius: 1rem;
-    font-size: 1.25rem;
+    font-size: .88rem;
     background-color: var(--background-color);
     color: var(--color);
     cursor: pointer;
@@ -54,6 +55,7 @@ button.calltoaction {
     --background-color: var(--clr-accent);
     --color: var(--clr-text);
     font-weight: 700;
+    font-size: 1.25rem;
 }
 
 a {

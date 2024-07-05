@@ -17,9 +17,9 @@ export default class Header extends LayoutContainerBreakout<"header"> {
                 )
             ),
             Z("nav").class(...flex.jcBetween, style.nav).children(
-                Z("h4").text("Home"),
-                Z("h4").text("Sobre nós"),
-                Z("h4").text("Dicas"),
+                Z("a").text("Home"),
+                Z("a").text("Sobre nós"),
+                Z("a").text("Dicas"),
                 Z("button").text("Entrar")
             )
         )

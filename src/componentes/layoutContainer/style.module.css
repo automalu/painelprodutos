@@ -14,7 +14,7 @@
     --breakout: minmax(0, var(--breakout-size));
     --breakout2: minmax(0, var(--breakout2-size));
     display: grid;
-    
+    overflow-x: hidden;
     grid-template-columns: 
         [full-width-start] var(--full-width)
         [breakout2-start] var(--breakout2)

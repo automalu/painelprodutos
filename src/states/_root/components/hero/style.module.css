@@ -1,5 +1,9 @@
-.hero > div {
-    grid-row:1 ;
+.hero {
+    margin-bottom: 5rem;
+}
+
+.hero>div {
+    grid-row: 1;
     position: relative;
 }
 
@@ -19,7 +23,7 @@
     padding-left: 1rem;
 }
 
-.hero div.text .profiles > img {
+.hero div.text .profiles>img {
     width: 2rem;
     height: 2rem;
     border-radius: 50%;
@@ -40,7 +44,7 @@
     margin-bottom: 2rem;
 }
 
-.hero div.image > div.esfera{
+.hero div.image>div.esfera {
     /* background: linear-gradient(to bottom, #950094 0%, #5E1CC8 100%); */
     position: relative;
     width: 100%;
@@ -50,13 +54,14 @@
     z-index: 1;
     position: relative;
 }
-.hero div.image > div.esfera > svg {
+
+.hero div.image>div.esfera>svg {
     width: 140%;
     position: absolute;
     left: -20%;
 }
 
-.hero div.image > img {
+.hero div.image>img {
     width: 110%;
     grid-row: 1;
     grid-column: 1;
