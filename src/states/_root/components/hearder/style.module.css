@@ -19,3 +19,8 @@
 .logo p i {
     font-weight: lighter
 }
+
+.nav {
+    width: 45%;
+    align-items: center;
+}
