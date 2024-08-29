@@ -21,14 +21,19 @@ export default class Product extends Card {
         );
     }
 
-    setInfo(info: { name?: string, img?: string, buttonText?: string }) {
-        this.name.text(info.name || "Name");
-        this.img.set("src", info.img || "").set("alt", "Image");
-        this.button.text(info.buttonText || "Ver Detalhes").click(() => {
-            //this.app.event("click/product/details", info);
-            //this.app.modal.show()
+    setInfo(data: any, product: { sku: string, name?: string, img?: string, buttonText?: string }) {
+        this.name.text(product.name || "Name");
+        this.img.set("src", product.img || "").set("alt", "Image");
+        this.button.text(product.buttonText || "Ver Detalhes").click(() => {
+            const headline = (data["headlines"] as any[]).find(({sku}) => sku === product["sku"]);
             const modal = new Modal(
-                Z("h1").text(info.name || ""),
+                Z("h1").text(product.name || ""),
+                Z("div").children(
+                    ...headline.headline.map((h: string) => Z("p").text(h)),
+                ),
+                Z("div").children(
+                    ...headline.post_text_paragraphs.map((h: string) => Z("p").text(h)),
+                ),
             ).style("primary")
             document.body.appendChild(modal.element);
         });

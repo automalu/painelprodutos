@@ -9,9 +9,12 @@ export default class Mensagem extends Card {
         this.class(style.msg, "d-flex", "gap-g", "ac-start").style("primary");
     }
 
-    setInfo(products: any[]) {
+    setInfo(data: any, products: any[]) {
         this.children(
-            ...products.map((product) => new Product(this.app).setInfo(product).style("inside"))
+            ...products.map((sku) => {
+                const product = (data["products"] as any[]).find(({ sku }) => sku === sku);
+                return new Product(this.app).setInfo(data, product).style("inside")
+            })
         )
         return this;
     }
