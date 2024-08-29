@@ -1,5 +1,6 @@
 .card {
     background-color: var(--clr-background);
+    color: var(--clr-text);
     padding: 1rem;
     border-radius: 1rem;
     flex-shrink: 0;
@@ -12,6 +13,7 @@
 
 .card.primary {
     background-color: var(--clr-primary);
+    color: var(--clr-background)
 }
 .card.accent {
     background-color: var(--clr-accent);

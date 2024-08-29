@@ -27,14 +27,15 @@ export default class Product extends Card {
         this.button.text(product.buttonText || "Ver Detalhes").click(() => {
             const headline = (data["headlines"] as any[]).find(({sku}) => sku === product["sku"]);
             const modal = new Modal(
-                Z("h1").text(product.name || ""),
-                Z("div").children(
+                Z("h2").text(product.name || ""),
+                new Card().style("inside").children(
                     ...headline.headline.map((h: string) => Z("p").text(h)),
                 ),
-                Z("div").children(
+                new Card().style("inside").children(
                     ...headline.post_text_paragraphs.map((h: string) => Z("p").text(h)),
                 ),
             ).style("primary")
+            modal.modal.class("d-grid", "gap-m")
             document.body.appendChild(modal.element);
         });
         return this;
