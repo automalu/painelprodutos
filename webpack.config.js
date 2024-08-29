@@ -32,6 +32,10 @@ export default {
                 use: ["style-loader", "css-loader"],
                 exclude: /\.module\.css$/,
             },
+            {
+                test: /\.svg$/,
+                type: "asset/source"
+            }
         ],
     },
     resolve: {
